@@ -13,7 +13,7 @@ export interface AirlineData {
 export const Api = {
   async getAll(): Promise<AirlineData[]> {
     const data = await fetchJsonp(
-      "http://kayakj.com/h/mobileapis/directory/airlines/homework",
+      "http://kayak.com/h/mobileapis/directory/airlines/homework",
       {
         jsonpCallback: "jsonp",
       }
