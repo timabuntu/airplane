@@ -10,3 +10,6 @@ const contextDefaultValue: AirlineContext = {
   AirlineData: [],
   applyFilter: (type: string) => {},
 };
+
+export const AirlineAppContext =
+  createContext<AirlineContext>(contextDefaultValue);
