@@ -2,9 +2,9 @@ import { Airplane } from "phosphor-react";
 
 export const Header: React.FC = () => {
   return (
-    <div>
+    <div className="container flex p-4 mx-auto">
       <div>
-        <Airplane />
+        <Airplane className="w-24 h-8" />
       </div>
     </div>
   );

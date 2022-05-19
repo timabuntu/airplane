@@ -5,7 +5,7 @@ export interface AirlineData {
   site: string;
   code: string;
   alliance: string;
-  logUrl: string;
+  logoURL: string;
   name: string;
   phone: string;
 }
@@ -18,7 +18,6 @@ export const Api = {
         jsonpCallback: "jsonp",
       }
     );
-    console.log(data);
     const response = await data.json();
     return response;
   },
