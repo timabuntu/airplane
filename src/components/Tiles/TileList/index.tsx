@@ -1,7 +1,19 @@
-const TileList: React.FC = () => {
-  return (
-    <h1>TileList</h1>
-  );
+import { AirlineData } from "../../../api/airline";
+import Tile from "../TileListItem";
+
+interface TileListProps {
+  airlineData: AirlineData[];
 }
 
-export default TileList;
+export const TileList: React.FC<TileListProps> = ({
+  airlineData,
+}: TileListProps) => {
+  return (
+    <div>
+      {airlineData.map((i: AirlineData) => {
+        return <Tile data={i} key={i.code} />;
+      })}
+      {airlineData.length === 0 && <span>Loading ...</span>}
+    </div>
+  );
+};
