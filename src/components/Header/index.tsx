@@ -1,7 +1,11 @@
-const Header: React.FC = () => {
-  return (
-    <h1>Header</h1>
-  );
-}
+import { Airplane } from "phosphor-react";
 
-export default Header;
+export const Header: React.FC = () => {
+  return (
+    <div>
+      <div>
+        <Airplane />
+      </div>
+    </div>
+  );
+};
